@@ -45,6 +45,13 @@ namespace MarATHON
             dopform yyy = new dopform();
             yyy.Show();  
         }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+           this.Hide();
+            newrunner yyy = new newrunner();
+            yyy.Show();  
+        }
         }
     }
 
