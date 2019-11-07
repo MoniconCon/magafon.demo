@@ -29,27 +29,45 @@ namespace MarATHON
             string login;
             string pass;
             string role;
-           // xyoi
-            //loginDEafs2018' AND [Пароль]='Wiw0VR
+           
+            if (textBox1.Text == "" && textBox2.Text == "") MessageBox.Show("Пустые поля");
+             else{
              string conn = "Data Source=127.0.0.1;Initial Catalog=g464_Golubtsov;User ID=student;Password=student";
              string str = "select [Email],[Password],[RoleId] FROM [User] WHERE [Email]='"+textBox1.Text+"' AND [Password]='"+textBox2.Text+"'";
              SqlConnection con = new SqlConnection(conn);
              con.Open();
              SqlCommand cmd = new SqlCommand(str, con);
              SqlDataReader rdr = cmd.ExecuteReader();
-             while (rdr.Read() == true)
+             if (rdr.Read() == true)
              {
                  login = rdr.GetString(0);
                  pass = rdr.GetString(1);
                  role = rdr.GetString(2);
-                 if (login == textBox1.Text && pass == textBox2.Text )
+
+                 switch (role)
                  {
-                     MessageBox.Show("ПРИВЕТ АНДРЕЙ");
-                     
+                     case "A":
+                         menuadmin open = new menuadmin();
+                         open.Show();
+                         this.Close();
+                         break;
+                     case "C":
+                         menukoor open2 = new menukoor();
+                         open2.Show();
+                         this.Close();
+                         break;
+                     case "R":
+                         menurun open3 = new menurun();
+                         open3.Show();
+                         this.Close();
+                         break;
                  }
-                 else { MessageBox.Show("АЛЛО ТЫКТО УХАДИи"); };
+                // MessageBox.Show("Вы успешно вышли в систему как "+role);
              }
+             else MessageBox.Show("Неверный логин или пароль"); 
+          
              con.Close();
+             }
         }
 
         private void button1_Click(object sender, EventArgs e)

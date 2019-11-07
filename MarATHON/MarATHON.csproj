@@ -74,6 +74,24 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="menuadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuadmin.Designer.cs">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menukoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menukoor.Designer.cs">
+      <DependentUpon>menukoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menurun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menurun.Designer.cs">
+      <DependentUpon>menurun.cs</DependentUpon>
+    </Compile>
     <Compile Include="newrunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuadmin.resx">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menukoor.resx">
+      <DependentUpon>menukoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menurun.resx">
+      <DependentUpon>menurun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newrunner.resx">
       <DependentUpon>newrunner.cs</DependentUpon>
