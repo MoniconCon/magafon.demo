@@ -37,6 +37,3 @@ C:\Users\user07\Desktop\464\марафон\MARATHON\MarATHON\bin\Debug\MarATHON.
 C:\Users\user07\Desktop\464\марафон\MARATHON\MarATHON\obj\Debug\MarATHON.menuadmin.resources
 C:\Users\user07\Desktop\464\марафон\MARATHON\MarATHON\obj\Debug\MarATHON.menukoor.resources
 C:\Users\user07\Desktop\464\марафон\MARATHON\MarATHON\obj\Debug\MarATHON.menurun.resources
-C:\Users\user07\Desktop\464\марафон\ыфв\magafon.demo\MarATHON\bin\Debug\MarATHON.exe.config
-C:\Users\user07\Desktop\464\марафон\ыфв\magafon.demo\MarATHON\obj\Debug\MarATHON.exe
-C:\Users\user07\Desktop\464\марафон\ыфв\magafon.demo\MarATHON\obj\Debug\MarATHON.pdb

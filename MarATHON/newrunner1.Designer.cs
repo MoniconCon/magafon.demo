@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -38,7 +37,6 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +51,22 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.g464_GolubtsovDataSet3 = new MarATHON.g464_GolubtsovDataSet3();
+            this.countryTableAdapter = new MarATHON.g464_GolubtsovDataSet3TableAdapters.CountryTableAdapter();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.countryBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.g464_GolubtsovDataSet4 = new MarATHON.g464_GolubtsovDataSet4();
+            this.countryTableAdapter1 = new MarATHON.g464_GolubtsovDataSet4TableAdapters.CountryTableAdapter();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.g464_GolubtsovDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.g464_GolubtsovDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -62,20 +75,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(405, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(136, 215);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
@@ -114,7 +113,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(460, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(451, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 88);
             this.pictureBox1.TabIndex = 8;
@@ -122,20 +121,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(451, 163);
+            this.button1.Location = new System.Drawing.Point(440, 163);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Просмотр...";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(348, 193);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 10;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 11, 7, 10, 31, 49, 0);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -265,11 +257,87 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Female",
+            "Male"});
+            this.comboBox1.Location = new System.Drawing.Point(135, 215);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 30;
+            // 
+            // countryBindingSource
+            // 
+            this.countryBindingSource.DataMember = "Country";
+            this.countryBindingSource.DataSource = this.g464_GolubtsovDataSet3;
+            // 
+            // g464_GolubtsovDataSet3
+            // 
+            this.g464_GolubtsovDataSet3.DataSetName = "g464_GolubtsovDataSet3";
+            this.g464_GolubtsovDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // countryTableAdapter
+            // 
+            this.countryTableAdapter.ClearBeforeFill = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "1991/12/12  19:30:00";
+            this.dateTimePicker1.Location = new System.Drawing.Point(337, 198);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2010, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 33;
+            this.dateTimePicker1.Value = new System.DateTime(2010, 12, 31, 0, 0, 0, 0);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.countryBindingSource1;
+            this.comboBox2.DisplayMember = "CountryCode";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(394, 230);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 31;
+            this.comboBox2.ValueMember = "CountryCode";
+            // 
+            // countryBindingSource1
+            // 
+            this.countryBindingSource1.DataMember = "Country";
+            this.countryBindingSource1.DataSource = this.g464_GolubtsovDataSet4;
+            // 
+            // g464_GolubtsovDataSet4
+            // 
+            this.g464_GolubtsovDataSet4.DataSetName = "g464_GolubtsovDataSet4";
+            this.g464_GolubtsovDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // countryTableAdapter1
+            // 
+            this.countryTableAdapter1.ClearBeforeFill = true;
+            // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(245, 53);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 34;
+            // 
             // newrunner1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 363);
+            this.ClientSize = new System.Drawing.Size(567, 342);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -284,7 +352,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox8);
@@ -292,12 +359,15 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "newrunner1";
             this.Text = "newrunner1";
+            this.Load += new System.EventHandler(this.newrunner1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.g464_GolubtsovDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.g464_GolubtsovDataSet4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,8 +376,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
@@ -315,7 +383,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
@@ -330,5 +397,16 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private g464_GolubtsovDataSet3 g464_GolubtsovDataSet3;
+        private System.Windows.Forms.BindingSource countryBindingSource;
+        private g464_GolubtsovDataSet3TableAdapters.CountryTableAdapter countryTableAdapter;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private g464_GolubtsovDataSet4 g464_GolubtsovDataSet4;
+        private System.Windows.Forms.BindingSource countryBindingSource1;
+        private g464_GolubtsovDataSet4TableAdapters.CountryTableAdapter countryTableAdapter1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

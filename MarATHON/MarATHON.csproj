@@ -62,6 +62,16 @@
     <Compile Include="formpay.Designer.cs">
       <DependentUpon>formpay.cs</DependentUpon>
     </Compile>
+    <Compile Include="g464_GolubtsovDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +224,28 @@
     </None>
     <None Include="g464_GolubtsovDataSet2.xss">
       <DependentUpon>g464_GolubtsovDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet31.xsc">
+      <DependentUpon>g464_GolubtsovDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet31.xss">
+      <DependentUpon>g464_GolubtsovDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet4.xsc">
+      <DependentUpon>g464_GolubtsovDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet4.xss">
+      <DependentUpon>g464_GolubtsovDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
