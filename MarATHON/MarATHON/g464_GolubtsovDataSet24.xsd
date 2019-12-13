@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="g464_GolubtsovDataSet24" targetNamespace="http://tempuri.org/g464_GolubtsovDataSet24.xsd" xmlns:mstns="http://tempuri.org/g464_GolubtsovDataSet24.xsd" xmlns="http://tempuri.org/g464_GolubtsovDataSet24.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="g464_GolubtsovConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="g464_GolubtsovConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MarATHON.Properties.Settings.GlobalReference.Default.g464_GolubtsovConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sumTableAdapter" GeneratorDataComponentClassName="sumTableAdapter" Name="sum" UserDataComponentName="sumTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="g464_GolubtsovConnectionString2 (Settings)" DbObjectName="g464_Golubtsov.dbo.sum" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Expr1 FROM dbo.sum</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="g464_GolubtsovDataSet24" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="g464_GolubtsovDataSet24" msprop:Generator_UserDSName="g464_GolubtsovDataSet24">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sum" msprop:Generator_TableClassName="sumDataTable" msprop:Generator_TableVarName="tablesum" msprop:Generator_TablePropName="sum" msprop:Generator_RowDeletingName="sumRowDeleting" msprop:Generator_RowChangingName="sumRowChanging" msprop:Generator_RowEvHandlerName="sumRowChangeEventHandler" msprop:Generator_RowDeletedName="sumRowDeleted" msprop:Generator_UserTableName="sum" msprop:Generator_RowChangedName="sumRowChanged" msprop:Generator_RowEvArgName="sumRowChangeEvent" msprop:Generator_RowClassName="sumRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

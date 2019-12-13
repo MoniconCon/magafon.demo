@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66195657-A6A7-4CC1-A47A-8634A3D7FD7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarATHON</RootNamespace>
+    <AssemblyName>MarATHON</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="blagorg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blagorg.Designer.cs">
+      <DependentUpon>blagorg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dopform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dopform.Designer.cs">
+      <DependentUpon>dopform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dotv8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dotv8.Designer.cs">
+      <DependentUpon>Dotv8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formpay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formpay.Designer.cs">
+      <DependentUpon>formpay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IMG\interaktmap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMG\interaktmap.Designer.cs">
+      <DependentUpon>interaktmap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interaktmap2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interaktmap2.Designer.cs">
+      <DependentUpon>interaktmap2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="longmarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="longmarathon.Designer.cs">
+      <DependentUpon>longmarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuadmin.Designer.cs">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menukoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menukoor.Designer.cs">
+      <DependentUpon>menukoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menurun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menurun.Designer.cs">
+      <DependentUpon>menurun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyRezRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyRezRun.Designer.cs">
+      <DependentUpon>MyRezRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newrunerr3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newrunerr3.Designer.cs">
+      <DependentUpon>newrunerr3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newrunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newrunner.Designer.cs">
+      <DependentUpon>newrunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newrunner1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newrunner1.Designer.cs">
+      <DependentUpon>newrunner1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEREMEN.cs" />
+    <Compile Include="Postuplenieinventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Postuplenieinventory.Designer.cs">
+      <DependentUpon>Postuplenieinventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="redaktbegun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redaktbegun.Designer.cs">
+      <DependentUpon>redaktbegun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sponsor.Designer.cs">
+      <DependentUpon>Sponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="begun1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="begun1.Designer.cs">
+      <DependentUpon>begun1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="g464_GolubtsovDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>g464_GolubtsovDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserCont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCont.Designer.cs">
+      <DependentUpon>UserCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volonters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volonters.Designer.cs">
+      <DependentUpon>Volonters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zagruzkavolonters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zagruzkavolonters.Designer.cs">
+      <DependentUpon>zagruzkavolonters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zavershenieregi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zavershenieregi.Designer.cs">
+      <DependentUpon>zavershenieregi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="blagorg.resx">
+      <DependentUpon>blagorg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dopform.resx">
+      <DependentUpon>dopform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dotv8.resx">
+      <DependentUpon>Dotv8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formpay.resx">
+      <DependentUpon>formpay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMG\interaktmap.resx">
+      <DependentUpon>interaktmap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interaktmap2.resx">
+      <DependentUpon>interaktmap2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="longmarathon.resx">
+      <DependentUpon>longmarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuadmin.resx">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menukoor.resx">
+      <DependentUpon>menukoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menurun.resx">
+      <DependentUpon>menurun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRezRun.resx">
+      <DependentUpon>MyRezRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newrunerr3.resx">
+      <DependentUpon>newrunerr3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newrunner.resx">
+      <DependentUpon>newrunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newrunner1.resx">
+      <DependentUpon>newrunner1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postuplenieinventory.resx">
+      <DependentUpon>Postuplenieinventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redaktbegun.resx">
+      <DependentUpon>redaktbegun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sponsor.resx">
+      <DependentUpon>Sponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="begun1.resx">
+      <DependentUpon>begun1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCont.resx">
+      <DependentUpon>UserCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volonters.resx">
+      <DependentUpon>Volonters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zagruzkavolonters.resx">
+      <DependentUpon>zagruzkavolonters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zavershenieregi.resx">
+      <DependentUpon>zavershenieregi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="g464_GolubtsovDataSet.xsc">
+      <DependentUpon>g464_GolubtsovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet.xss">
+      <DependentUpon>g464_GolubtsovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet1.xsc">
+      <DependentUpon>g464_GolubtsovDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet1.xss">
+      <DependentUpon>g464_GolubtsovDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet10.xsc">
+      <DependentUpon>g464_GolubtsovDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet10.xss">
+      <DependentUpon>g464_GolubtsovDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet11.xsc">
+      <DependentUpon>g464_GolubtsovDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet11.xss">
+      <DependentUpon>g464_GolubtsovDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet12.xsc">
+      <DependentUpon>g464_GolubtsovDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet12.xss">
+      <DependentUpon>g464_GolubtsovDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet13.xsc">
+      <DependentUpon>g464_GolubtsovDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet13.xss">
+      <DependentUpon>g464_GolubtsovDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet14.xsc">
+      <DependentUpon>g464_GolubtsovDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet14.xss">
+      <DependentUpon>g464_GolubtsovDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet15.xsc">
+      <DependentUpon>g464_GolubtsovDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet15.xss">
+      <DependentUpon>g464_GolubtsovDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet16.xsc">
+      <DependentUpon>g464_GolubtsovDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet16.xss">
+      <DependentUpon>g464_GolubtsovDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet17.xsc">
+      <DependentUpon>g464_GolubtsovDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet17.xss">
+      <DependentUpon>g464_GolubtsovDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet18.xsc">
+      <DependentUpon>g464_GolubtsovDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet18.xss">
+      <DependentUpon>g464_GolubtsovDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet19.xsc">
+      <DependentUpon>g464_GolubtsovDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet19.xss">
+      <DependentUpon>g464_GolubtsovDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet2.xsc">
+      <DependentUpon>g464_GolubtsovDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet2.xss">
+      <DependentUpon>g464_GolubtsovDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet20.xsc">
+      <DependentUpon>g464_GolubtsovDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet20.xss">
+      <DependentUpon>g464_GolubtsovDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet21.xsc">
+      <DependentUpon>g464_GolubtsovDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet21.xss">
+      <DependentUpon>g464_GolubtsovDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet22.xsc">
+      <DependentUpon>g464_GolubtsovDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet22.xss">
+      <DependentUpon>g464_GolubtsovDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet23.xsc">
+      <DependentUpon>g464_GolubtsovDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet23.xss">
+      <DependentUpon>g464_GolubtsovDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet24.xsc">
+      <DependentUpon>g464_GolubtsovDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet24.xss">
+      <DependentUpon>g464_GolubtsovDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet25.xsc">
+      <DependentUpon>g464_GolubtsovDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet25.xss">
+      <DependentUpon>g464_GolubtsovDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet26.xsc">
+      <DependentUpon>g464_GolubtsovDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet26.xss">
+      <DependentUpon>g464_GolubtsovDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet31.xsc">
+      <DependentUpon>g464_GolubtsovDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet31.xss">
+      <DependentUpon>g464_GolubtsovDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet4.xsc">
+      <DependentUpon>g464_GolubtsovDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet4.xss">
+      <DependentUpon>g464_GolubtsovDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet5.xsc">
+      <DependentUpon>g464_GolubtsovDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet5.xss">
+      <DependentUpon>g464_GolubtsovDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet6.xsc">
+      <DependentUpon>g464_GolubtsovDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet6.xss">
+      <DependentUpon>g464_GolubtsovDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet7.xsc">
+      <DependentUpon>g464_GolubtsovDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet7.xss">
+      <DependentUpon>g464_GolubtsovDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet8.xsc">
+      <DependentUpon>g464_GolubtsovDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet8.xss">
+      <DependentUpon>g464_GolubtsovDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet9.xsc">
+      <DependentUpon>g464_GolubtsovDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="g464_GolubtsovDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>g464_GolubtsovDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="g464_GolubtsovDataSet9.xss">
+      <DependentUpon>g464_GolubtsovDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG\marathon-image.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

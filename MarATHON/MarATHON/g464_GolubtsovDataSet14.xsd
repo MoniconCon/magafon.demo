@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="g464_GolubtsovDataSet14" targetNamespace="http://tempuri.org/g464_GolubtsovDataSet14.xsd" xmlns:mstns="http://tempuri.org/g464_GolubtsovDataSet14.xsd" xmlns="http://tempuri.org/g464_GolubtsovDataSet14.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="g464_GolubtsovConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="g464_GolubtsovConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MarATHON.Properties.Settings.GlobalReference.Default.g464_GolubtsovConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DlinniyTableAdapter" GeneratorDataComponentClassName="DlinniyTableAdapter" Name="Dlinniy" UserDataComponentName="DlinniyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="g464_GolubtsovConnectionString1 (Settings)" DbObjectName="g464_Golubtsov.dbo.Dlinniy" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BibNumber, RaceTime, CityName, YearHeld, EventName FROM dbo.Dlinniy</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BibNumber" DataSetColumn="BibNumber" />
+              <Mapping SourceColumn="RaceTime" DataSetColumn="RaceTime" />
+              <Mapping SourceColumn="CityName" DataSetColumn="CityName" />
+              <Mapping SourceColumn="YearHeld" DataSetColumn="YearHeld" />
+              <Mapping SourceColumn="EventName" DataSetColumn="EventName" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="g464_GolubtsovConnectionString1 (Settings)" DbObjectName="g464_Golubtsov.dbo.Dlinniy" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BibNumber, RaceTime, CityName, YearHeld, EventName FROM dbo.Dlinniy</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="g464_GolubtsovDataSet14" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="g464_GolubtsovDataSet14" msprop:Generator_UserDSName="g464_GolubtsovDataSet14">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dlinniy" msprop:Generator_TableClassName="DlinniyDataTable" msprop:Generator_TableVarName="tableDlinniy" msprop:Generator_RowChangedName="DlinniyRowChanged" msprop:Generator_TablePropName="Dlinniy" msprop:Generator_RowDeletingName="DlinniyRowDeleting" msprop:Generator_RowChangingName="DlinniyRowChanging" msprop:Generator_RowEvHandlerName="DlinniyRowChangeEventHandler" msprop:Generator_RowDeletedName="DlinniyRowDeleted" msprop:Generator_RowClassName="DlinniyRow" msprop:Generator_UserTableName="Dlinniy" msprop:Generator_RowEvArgName="DlinniyRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BibNumber" msprop:Generator_ColumnVarNameInTable="columnBibNumber" msprop:Generator_ColumnPropNameInRow="BibNumber" msprop:Generator_ColumnPropNameInTable="BibNumberColumn" msprop:Generator_UserColumnName="BibNumber" type="xs:short" minOccurs="0" />
+              <xs:element name="RaceTime" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRaceTime" msprop:Generator_ColumnPropNameInRow="RaceTime" msprop:Generator_ColumnPropNameInTable="RaceTimeColumn" msprop:Generator_UserColumnName="RaceTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CityName" msprop:Generator_ColumnVarNameInTable="columnCityName" msprop:Generator_ColumnPropNameInRow="CityName" msprop:Generator_ColumnPropNameInTable="CityNameColumn" msprop:Generator_UserColumnName="CityName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YearHeld" msprop:Generator_ColumnVarNameInTable="columnYearHeld" msprop:Generator_ColumnPropNameInRow="YearHeld" msprop:Generator_ColumnPropNameInTable="YearHeldColumn" msprop:Generator_UserColumnName="YearHeld" type="xs:short" minOccurs="0" />
+              <xs:element name="EventName" msprop:Generator_ColumnVarNameInTable="columnEventName" msprop:Generator_ColumnPropNameInRow="EventName" msprop:Generator_ColumnPropNameInTable="EventNameColumn" msprop:Generator_UserColumnName="EventName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
